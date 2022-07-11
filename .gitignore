@@ -1,0 +1,13 @@
+build
+*.creator
+*.includes
+*.files
+*.config
+*.obj
+*.off
+__pycache__
+*.creator.user
+*.egg-info
+*.pyc
+dist
+.cache
