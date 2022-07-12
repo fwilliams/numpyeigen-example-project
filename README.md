@@ -22,3 +22,20 @@ To adapt this project for your own custom module, you need to do the following:
 2. Edit `setup.py` (See comments on where to edit)
 3. Edit `CMakeLists.txt` (See comments on where to edit)
 4. Edit `tests/test_example.py` (or delete it if you don't want tests)
+
+#### Deploying your package to PyPI
+This project can convenient deploy your package to PyPI when you release a new version.
+To enable this, first go to:
+> Settings > Secrets > Actions
+
+and set the key `PYPI_API_TOKEN` to the API token for your PyPI account. You can get an API
+token by going to your [PyPY Account Settings](https://pypi.org/account/login/?next=%2Fmanage%2Faccount%2F)
+and scrolling down to the API tokens section.
+
+Once you've set up an API token, you can deploy a new version of your package by creating a
+release whose name is of the form `vX.Y.Z` where `X`, `Y`, and `Z` are numbers.
+
+**Important**: When creating a release `vX.Y.Z`, don't forget to update the version in `setup.py` to
+match!
+
+When you create such a release, Github Actions will build your package and push the new version to PyPI.
