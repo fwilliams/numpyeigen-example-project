@@ -1,4 +1,8 @@
 cmake_minimum_required(VERSION 3.15)
+
+##################################################################
+# TODO: You should change the project name to match your project #
+##################################################################
 project(numpyeigen-example-project)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_BUILD_TYPE "Release")
@@ -17,9 +21,9 @@ set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 include(numpyeigen) # This will define Eigen3::Eigen if we enabled NPE_WITH_EIGEN
 
 
-# ###########################################################################################################
-# You need to change the following code for your module (e.g. to add more sources, or to rename the module) #
-#############################################################################################################
+######$############################################################################################################
+# TODO: You need to change the following code for your module (e.g. to add more sources, or to rename the module) #
+#####4#############################################################################################################
 
 # Create a Python module called _example_internal which will live in the example/ directory
 # You can import functions from the internal module in example/__init__.py to publically expose them
