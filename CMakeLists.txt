@@ -21,9 +21,9 @@ set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 include(numpyeigen) # This will define Eigen3::Eigen if we enabled NPE_WITH_EIGEN
 
 
-######$############################################################################################################
+###################################################################################################################
 # TODO: You need to change the following code for your module (e.g. to add more sources, or to rename the module) #
-#####4#############################################################################################################
+###################################################################################################################
 
 # Create a Python module called _example_internal which will live in the example/ directory
 # You can import functions from the internal module in example/__init__.py to publically expose them
